@@ -120,6 +120,25 @@ Use it to make something cool, have fun, and share what you've learned with othe
     margin-bottom: 0;
   }
 /*Custom css*/
+
+  ul#menu-primary-menu li.active a, ul#menu-primary-menu a:hover {
+    color: white;
+    background: #007bff;
+    transition: all 0.5 ease-out;
+  }
+  ul#menu-primary-menu a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.5 ease-out;
+  }
+
+  ul#menu-primary-menu li {
+    display: flex;
+    justify-content: space-between;
+  }
+  
   .showcase {
     height: 600px;
     padding: 100px 20px;
@@ -155,3 +174,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
     padding: 15px;
     border: #ccc 1px solid;
   }
+
+  .post-thumb img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
