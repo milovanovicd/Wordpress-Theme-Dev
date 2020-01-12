@@ -1,5 +1,17 @@
 
-    <footer class="blog-footer">
+    <!-- Sidebar -->
+        <aside class="col-md-4 blog-sidebar">
+            <?php if(is_active_sidebar('sidebar')):?>
+                <?php dynamic_sidebar('sidebar')?>
+            <?php endif;?>
+        </aside><!-- /.blog-sidebar -->
+
+    </div><!-- /.row -->
+
+    </main><!-- /.container -->   
+
+    <!-- Footer -->
+   <footer class="blog-footer">
         <p>&copy;<?php echo Date('Y'); ?> - <?php bloginfo('name');?> <p>
             <a href="#">Back to top</a>
         </p>
