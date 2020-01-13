@@ -7,6 +7,9 @@
         register_nav_menus( array(
             'primary' => __( 'Primary Menu')
         ) );        
+        
+        //Format postova
+        add_theme_support('post-formats', array('aside', 'gallery'));
     }
 
 
