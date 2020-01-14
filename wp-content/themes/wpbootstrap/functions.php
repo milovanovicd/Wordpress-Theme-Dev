@@ -59,5 +59,8 @@
     }
 
     add_action('widgets_init', 'wpb_init_widgets'); // dodaje se opcija Widget u Appearance
+
+    //Customizer
+    require get_template_directory().'/inc/customizer.php'
 ?>
 

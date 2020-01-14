@@ -52,6 +52,13 @@
     <?php wp_head();?> <!-- Jako bitno za head deo wordpress-a koji se generise sam dodavanjem plugin-ova na primer-->
 </head>
 
+<style>
+    .showcase {
+        background: url(<?php echo get_theme_mod('showcase_image',get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+        background-size: cover;
+    }
+</style>
+
 <body>
     <div class="container">
         <header class="blog-header py-3">
@@ -95,9 +102,9 @@
         </div>
 <section class="showcase">
         <div class="container">
-            <h1>Custom Wordpress Theme</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus harum numquam. Odit sequi, illo, dolor eos vero iusto dolorem sapiente minima soluta ipsam ut et voluptate, quis earum nulla.</p>
-            <a href="" class="btn btn-primary btn-lg">Read More</a>
+            <h1><?php echo get_theme_mod('showcase_heading','Custom Wordpress Theme'); ?></h1>
+            <p><?php echo get_theme_mod('showcase_text','Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus harum numquam. Odit sequi, illo, dolor eos vero iusto dolorem sapiente minima soluta ipsam ut et voluptate, quis earum nulla.'); ?></p>
+            <a href="<?php echo get_theme_mod('btn_url','#'); ?>" class="btn btn-primary btn-lg"><?php echo get_theme_mod('btn_text','Read More'); ?></a>
         </div>
     </section>
 
