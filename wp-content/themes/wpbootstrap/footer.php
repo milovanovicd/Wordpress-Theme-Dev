@@ -1,14 +1,15 @@
 
     <!-- Sidebar -->
-        <aside class="col-md-4 blog-sidebar">
-            <?php if(is_active_sidebar('sidebar')):?>
-                <?php dynamic_sidebar('sidebar')?>
+    <?php if(!is_front_page()):?>
+            <aside class="col-md-4 blog-sidebar">
+                <?php if(is_active_sidebar('sidebar')):?>
+                    <?php dynamic_sidebar('sidebar')?>
+                <?php endif;?>
+            </aside><!-- /.blog-sidebar -->
             <?php endif;?>
-        </aside><!-- /.blog-sidebar -->
+        </div><!-- /.row -->
 
-    </div><!-- /.row -->
-
-    </main><!-- /.container -->   
+        </main><!-- /.container -->   
 
     <!-- Footer -->
    <footer class="blog-footer">

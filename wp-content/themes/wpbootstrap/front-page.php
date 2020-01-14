@@ -92,10 +92,53 @@
             ?>
             </nav>
         </div>
+        </div>
+<section class="showcase">
+        <div class="container">
+            <h1>Custom Wordpress Theme</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ducimus harum numquam. Odit sequi, illo, dolor eos vero iusto dolorem sapiente minima soluta ipsam ut et voluptate, quis earum nulla.</p>
+            <a href="" class="btn btn-primary btn-lg">Read More</a>
+        </div>
+    </section>
 
-        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-            <div class="col-md-6 px-0">
-                <h1 class="display-4"><?php bloginfo('name');?></h1>
-                <p class="lead my-3"><?php bloginfo('description');?></p>
+    <section class="boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                
+                    <?php if(is_active_sidebar('box1')) :?>
+                            <?php dynamic_sidebar('box1');?>
+                        <?php endif;?>
+
+                </div>
+                <div class="col-md-4">
+    
+                    <?php if(is_active_sidebar('box2')) :?>
+                            <?php dynamic_sidebar('box2');?>
+                        <?php endif;?>
+
+                </div>
+                <div class="col-md-4">
+
+                    <?php if(is_active_sidebar('box3')) :?>
+                            <?php dynamic_sidebar('box3');?>
+                        <?php endif;?>
+
+                </div>
+                
             </div>
         </div>
+        </div>
+    </section>
+    <footer class="blog-footer">
+        <p>&copy;<?php echo Date('Y'); ?> - <?php bloginfo('name');?> <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+    <?php wp_footer();?>  <!--Dodaje admin bar na vrhu -->      
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="<?php bloginfo('template_url');?>/js/bootstrap.min.js"></script>
+</body>
+
+</html>

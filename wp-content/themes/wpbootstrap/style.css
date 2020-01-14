@@ -146,7 +146,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     border-bottom: #ccc 1px solid;
     margin-bottom:30px;
     color: #fff;
-    background: url('/assets/img/showcase.jpg') no-repeat center center;
+    background: #333 url('/assets/img/showcase.jpg') no-repeat center center;
   }
 
   .showcase h1 {
@@ -242,4 +242,10 @@ div.comment-respond p.form-submit input#submit {
 
 .post-gallery h2 {
   color: #fff;
+}
+
+.well {
+  background: #ccc;
+  padding: 10px;
+  border: 1px solid;
 }
