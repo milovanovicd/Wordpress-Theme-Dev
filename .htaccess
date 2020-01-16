@@ -13,3 +13,5 @@ RewriteRule . /wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
+
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
